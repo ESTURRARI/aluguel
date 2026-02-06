@@ -30,24 +30,24 @@ class UsuarioDetailView(RetrieveUpdateDestroyAPIView):
 
 class ImovelView(ListCreateAPIView):
     queryset = Imovel.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = ImovelSerializers
 
 class ImovelDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Imovel.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = ImovelSerializers
 
 class ContratoView(ListCreateAPIView):
     queryset = Contrato.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = ContratoSerializers
 
 class ContratoDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Contrato.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = ContratoSerializers
 
 class PagamentoView(ListCreateAPIView):
     queryset = Pagamento.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = PagamentoSerializers
 
 class PagamentoDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Pagamento.objects.all()
-    serializer_class = UsuarioSerializer
+    serializer_class = PagamentoSerializers
